@@ -1,8 +1,79 @@
-.skills-section{
-  label{
-    h3{
-      text-align: center;
-      font-size: 30px;
-    }
-  }
+h3{
+  line-height: 90px;
+  text-align: left;
+  font-size: 30px;
+  margin: 0;
+}
+
+.twolines{
+  line-height: inherit;
+}
+
+.one-line{
+  position: absolute;
+  top: 50%;
+  transform: translateY(50%);
+}
+
+.skills{
+  background: url('../img/skills.png')
+}
+
+.skill{
+  padding: 15px;
+  position: relative;
+  margin: 15px 0;
+  height: 90px;
+}
+
+.progressbar{
+  border-top: 25px solid #2b5464;
+  height: 30px;
+  margin-top: 23px;
+  display: block;
+}
+
+.percent-20{
+  width: 20%;
+  background: red;
+  background: -webkit-linear-gradient(left, red , yellow);
+  background: -o-linear-gradient(right, red, yellow);
+  background: -moz-linear-gradient(right, red, yellow);
+  background: linear-gradient(to right, red , yellow);
+}
+
+.percent-40{
+  width: 40%;
+  background: red;
+  background: -webkit-linear-gradient(left, red , yellow, orange);
+  background: -o-linear-gradient(right, red, yellow, orange);
+  background: -moz-linear-gradient(right, red, yellow, orange);
+  background: linear-gradient(to right, red , yellow, orange);
+}
+
+.percent-60{
+  width: 60%;
+  background: red;
+  background: -webkit-linear-gradient(left, red , yellow, orange, green);
+  background: -o-linear-gradient(right, red, yellow, orange, green);
+  background: -moz-linear-gradient(right, red, yellow, orange, green);
+  background: linear-gradient(to right, red , yellow, orange, green);
+}
+
+.percent-80{
+  width: 80%;
+  background: red;
+  background: -webkit-linear-gradient(left, red , yellow, orange, green, lime);
+  background: -o-linear-gradient(right, red, yellow, orange, green, lime);
+  background: -moz-linear-gradient(right, red, yellow, orange, green, lime);
+  background: linear-gradient(to right, red , yellow, orange, green, lime);
+}
+
+.percent-100{
+  width: 100%;
+  background: red;
+  background: -webkit-linear-gradient(left, red , yellow, orange, green, lime, rgb(92, 255, 93));
+  background: -o-linear-gradient(right, red, yellow, orange, green, lime, rgb(92, 255, 93));
+  background: -moz-linear-gradient(right, red, yellow, orange, green, lime, rgb(92, 255, 93));
+  background: linear-gradient(to right, red , yellow, orange, green, lime, rgb(92, 255, 93));
 }

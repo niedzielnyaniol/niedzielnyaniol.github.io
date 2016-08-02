@@ -10,3 +10,9 @@ h2{
   margin-top: 0;
   color: rgba(10,10,10,0.9);
 }
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.75), transparent);
+}

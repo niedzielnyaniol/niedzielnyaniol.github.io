@@ -13,6 +13,13 @@ h2 {
   color: rgba(10, 10, 10, 0.9);
 }
 
+/* line 14, ../sass/base/_base.scss */
+hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.75), transparent);
+}
+
 /* line 1, ../sass/components/_blocks.scss */
 .block {
   background: #ccc;
@@ -224,7 +231,7 @@ h2 {
     background-image: url("../img/github-logo-lg.png");
     background-repeat: no-repeat;
     background-attachment: local;
-    background-size: 50%;
+    background-size: 80%;
     background-position: center;
     width: 100%;
   }
@@ -288,7 +295,7 @@ h2 {
     background: url("../img/github-logo-lg.png");
     background-repeat: no-repeat;
     background-attachment: local;
-    background-size: 70%;
+    background-size: 100%;
     background-position: center;
     width: 100%;
   }
@@ -336,6 +343,16 @@ section {
     background: repeating-linear-gradient(45deg, #606dbc, #606dbc 10px, #465298 10px, #465298 20px);
   }
 }
+/* line 32, ../sass/components/_sections.scss */
+.primary-section {
+  font-size: 22px;
+  text-align: justify;
+  width: 100%;
+  background: #2b5464;
+  border-top: 5px solid #7fba00;
+  color: #fff;
+}
+
 /* line 1, ../sass/components/_bootstrap-extentions.scss */
 .no-pads-left, .no-pads {
   padding-left: 0 !important;
@@ -400,8 +417,93 @@ section {
   background: url("http://designwoop.com/uploads/2013/12/22-freebie-portfolio-design-tutorial.jpg");
 }
 
-/* line 3, ../sass/layouts/_skills.scss */
-.skills-section label h3 {
-  text-align: center;
+/* line 1, ../sass/layouts/_skills.scss */
+h3 {
+  line-height: 90px;
+  text-align: left;
   font-size: 30px;
+  margin: 0;
+}
+
+/* line 8, ../sass/layouts/_skills.scss */
+.twolines {
+  line-height: inherit;
+}
+
+/* line 12, ../sass/layouts/_skills.scss */
+.one-line {
+  position: absolute;
+  top: 50%;
+  transform: translateY(50%);
+}
+
+/* line 18, ../sass/layouts/_skills.scss */
+.skills {
+  background: url("../img/skills.png");
+}
+
+/* line 22, ../sass/layouts/_skills.scss */
+.skill {
+  padding: 15px;
+  position: relative;
+  margin: 15px 0;
+  height: 90px;
+}
+
+/* line 29, ../sass/layouts/_skills.scss */
+.progressbar {
+  border-top: 25px solid #2b5464;
+  height: 30px;
+  margin-top: 23px;
+  display: block;
+}
+
+/* line 36, ../sass/layouts/_skills.scss */
+.percent-20 {
+  width: 20%;
+  background: red;
+  background: -webkit-linear-gradient(left, red, yellow);
+  background: -o-linear-gradient(right, red, yellow);
+  background: -moz-linear-gradient(right, red, yellow);
+  background: linear-gradient(to right, red, yellow);
+}
+
+/* line 45, ../sass/layouts/_skills.scss */
+.percent-40 {
+  width: 40%;
+  background: red;
+  background: -webkit-linear-gradient(left, red, yellow, orange);
+  background: -o-linear-gradient(right, red, yellow, orange);
+  background: -moz-linear-gradient(right, red, yellow, orange);
+  background: linear-gradient(to right, red, yellow, orange);
+}
+
+/* line 54, ../sass/layouts/_skills.scss */
+.percent-60 {
+  width: 60%;
+  background: red;
+  background: -webkit-linear-gradient(left, red, yellow, orange, green);
+  background: -o-linear-gradient(right, red, yellow, orange, green);
+  background: -moz-linear-gradient(right, red, yellow, orange, green);
+  background: linear-gradient(to right, red, yellow, orange, green);
+}
+
+/* line 63, ../sass/layouts/_skills.scss */
+.percent-80 {
+  width: 80%;
+  background: red;
+  background: -webkit-linear-gradient(left, red, yellow, orange, green, lime);
+  background: -o-linear-gradient(right, red, yellow, orange, green, lime);
+  background: -moz-linear-gradient(right, red, yellow, orange, green, lime);
+  background: linear-gradient(to right, red, yellow, orange, green, lime);
+}
+
+/* line 72, ../sass/layouts/_skills.scss */
+.percent-100 {
+  width: 100%;
+  background: red;
+  background: -webkit-linear-gradient(left, red, yellow, orange, green, lime, #5cff5d);
+  background: -o-linear-gradient(right, red, yellow, orange, green, lime, #5cff5d);
+  background: -moz-linear-gradient(right, red, yellow, orange, green, lime, #5cff5d);
+  background: linear-gradient(to right, red, yellow, orange, green, lime, #5cff5d);
 }
