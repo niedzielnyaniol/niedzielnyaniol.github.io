@@ -1,0 +1,24 @@
+// in portfolio section:
+.block:hover .img-block{
+  animation: blur-effect 300ms ease-in-out forwards;
+  -webkit-animation: blur-effect 300ms ease-in-out forwards;
+}
+
+@keyframes blur-effect {
+  0%{
+    -webkit-filter: blur(0);
+    -moz-filter: blur(0);
+    -o-filter: blur(0);
+    -ms-filter: blur(0);
+    filter: blur(0);
+    transform: rotate(0) scale(1);
+  }
+  100%{
+    -webkit-filter: blur(3px);
+    -moz-filter: blur(3px);
+    -o-filter: blur(3px);
+    -ms-filter: blur(3px);
+    filter: blur(3px);
+    transform: rotate(0) scale(1.05);
+  }
+}

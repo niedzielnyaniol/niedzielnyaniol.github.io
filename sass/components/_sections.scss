@@ -1,0 +1,30 @@
+section{
+  padding: 30px 0;
+}
+
+.portfolio-section{
+  position: relative;
+  background: repeating-linear-gradient(
+    45deg,
+    #606dbc,
+    #606dbc 10px,
+    #465298 10px,
+    #465298 20px
+  );
+}
+
+// relative layout - small screens
+@media (max-width: 767px) {
+  .portfolio-section{
+
+    height: 1710px;
+    position: relative;
+    background: repeating-linear-gradient(
+      45deg,
+      #606dbc,
+      #606dbc 10px,
+      #465298 10px,
+      #465298 20px
+    );
+  }
+}

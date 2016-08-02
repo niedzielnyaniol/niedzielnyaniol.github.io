@@ -1,0 +1,14 @@
+//base
+@import "base/_variables.scss";
+@import "base/_base.scss";
+@import "base/_mixins.scss";
+
+//components
+@import "components/_blocks.scss";
+@import "components/_sections.scss";
+@import "components/_bootstrap-extentions.scss";
+@import "components/_animations.scss";
+
+//layout
+@import "layouts/_portfolio.scss";
+@import "layouts/_skills.scss";
