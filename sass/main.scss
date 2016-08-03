@@ -1,3 +1,4 @@
+@import "compass/css3";
 //base
 @import "base/_variables.scss";
 @import "base/_base.scss";
@@ -8,7 +9,9 @@
 @import "components/_sections.scss";
 @import "components/_bootstrap-extentions.scss";
 @import "components/_animations.scss";
+@import "components/_logos.scss";
 
 //layout
 @import "layouts/_portfolio.scss";
 @import "layouts/_skills.scss";
+@import "layouts/_footer.scss";
