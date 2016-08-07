@@ -5,8 +5,15 @@ header{
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 640px;
   width: 100%;
+  position: relative;
+
+  .borderkick{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -80%);
+  }
 
   nav{
 
@@ -40,7 +47,6 @@ header{
     letter-spacing: 0.05em;
     margin-bottom: 20px;
     clear: both;
-    padding-top: 200px;
 
     span{
       display: inline-block;

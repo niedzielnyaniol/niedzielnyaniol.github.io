@@ -929,15 +929,22 @@ header {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 640px;
   width: 100%;
+  position: relative;
 }
 /* line 11, ../sass/layouts/_header.scss */
+header .borderkick {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -80%);
+}
+/* line 18, ../sass/layouts/_header.scss */
 header nav {
   float: right;
   margin: 30px 30px 0 0;
 }
-/* line 16, ../sass/layouts/_header.scss */
+/* line 23, ../sass/layouts/_header.scss */
 header nav a {
   color: rgba(0, 0, 0, 0.7);
   display: inline-block;
@@ -946,16 +953,16 @@ header nav a {
   text-transform: uppercase;
   margin: 0;
 }
-/* line 24, ../sass/layouts/_header.scss */
+/* line 31, ../sass/layouts/_header.scss */
 header nav a:first-child {
   margin-left: 0px;
 }
-/* line 28, ../sass/layouts/_header.scss */
+/* line 35, ../sass/layouts/_header.scss */
 header nav a:hover {
   color: #000;
   text-decoration: none;
 }
-/* line 35, ../sass/layouts/_header.scss */
+/* line 42, ../sass/layouts/_header.scss */
 header h1 {
   text-align: center;
   font-weight: 700;
@@ -964,15 +971,14 @@ header h1 {
   letter-spacing: 0.05em;
   margin-bottom: 20px;
   clear: both;
-  padding-top: 200px;
 }
-/* line 45, ../sass/layouts/_header.scss */
+/* line 51, ../sass/layouts/_header.scss */
 header h1 span {
   display: inline-block;
   padding: 0.2em 0.5em;
   border: #fff solid 10px;
 }
-/* line 52, ../sass/layouts/_header.scss */
+/* line 58, ../sass/layouts/_header.scss */
 header .kicker {
   color: #fff;
   text-align: center;
@@ -983,13 +989,13 @@ header .kicker {
 }
 
 @media (max-width: 990px) {
-  /* line 64, ../sass/layouts/_header.scss */
+  /* line 70, ../sass/layouts/_header.scss */
   header h1 span {
     border: #fff solid 5px;
   }
 }
 @media (min-width: 1000px) {
-  /* line 70, ../sass/layouts/_header.scss */
+  /* line 76, ../sass/layouts/_header.scss */
   header {
     background-attachment: fixed;
   }
