@@ -19,14 +19,31 @@
 
 a.linkedin{
   font-size: 48px;
+  width: 70%;
   color: #fff;
   background: #0177B5;
-  margin: 0!important;
+  margin: 0 auto!important;
   padding: 0!important;
   display: block;
   @include border-radius(5px);
 
   &:hover{
     background: #0066a4;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 989px){
+  .footer-section{
+    h1{
+      font-size: 55px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .footer-section{
+    h1{
+      font-size: 30px;
+    }
   }
 }

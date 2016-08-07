@@ -56,9 +56,8 @@
 }
 
 .skill-wpf{
-  background-color: rgba(8,60,130,1);
-  @include filter-gradient(#083c82, #3193c0, horizontal);
-  @include background-image(linear-gradient(left, rgba(8,60,130,1) 0%, rgba(49,147,192,1) 100%));
+  @include filter-gradient(#9db3bd, #2462b3, horizontal);
+  @include background-image(linear-gradient(left bottom, rgba(157,179,189,1) 0%, rgba(36,98,179,1) 100%));
 }
 
 .skill-java{
