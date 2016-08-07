@@ -1,0 +1,44 @@
+//output: ../index.html
+doctype html
+html
+head
+  meta(charset="utf-8")
+  title mackac.pl
+  meta(http-equiv='X-UA-Compatible', content='IE=edge')
+  meta(name='viewport', content='width=device-width, initial-scale=1.0')
+  link(href='css/bootstrap.min.css', rel='stylesheet')
+  link(rel="stylesheet", href="css/main.css")
+  link(href='css/main.css', rel='stylesheet')
+  link(href='https://fonts.googleapis.com/css?family=Dosis|Lobster&subset=latin,latin-ext', rel='stylesheet', type='text/css')
+  script.
+    document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
+
+body
+  
+  
+  include sections/header-section.jade
+  
+  section.about-me.section-white
+    .container
+      .row
+        .section-header
+          h2 O mnie:
+        .col-xs-12
+          .img-circle.img-profile
+      .row
+        .col-md-8.col-md-offset-2
+          p <b>Zażłóć gęślą jaźń</b>, ZAŻÓŁĆ gĘŚlĄ jaŹŃ consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          
+          p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          
+      
+    
+          
+  include sections/skills-section.jade
+  include sections/portfolio-section.jade
+  include sections/footer-section.jade
+
+  script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js')
+  script(src='js/bootstrap.min.js', type='text/javascript')
+  script(src='js/smoothScroll.js')
+  script(src='js/scripts.js')

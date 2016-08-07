@@ -1,0 +1,73 @@
+header{
+  background: url('../img/header-background.jpg');
+  background-position: center bottom;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 640px;
+  width: 100%;
+
+  nav{
+
+    float: right;
+    margin: 30px 30px 0 0;
+
+    a{
+      color: rgba(0,0,0,0.7);
+      display: inline-block;
+      margin-left: 20px !important;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin: 0;
+
+      &:first-child{
+        margin-left: 0px;
+      }
+
+        &:hover{
+          color: #000;
+          text-decoration: none;
+        }
+      }
+    }
+
+  h1{
+    text-align: center;
+    font-weight: 700;
+    color: #fff;
+    text-transform: lowercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 20px;
+    clear: both;
+    padding-top: 200px;
+
+    span{
+      display: inline-block;
+      padding: 0.2em 0.5em;
+      border: #fff solid 10px;
+    }
+  }
+
+  .kicker{
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    line-height: 1;
+  }
+
+}
+
+@media (max-width: 990px) {
+  header h1 span{
+      border: #fff solid 5px;
+  }
+}
+
+@media (min-width: 1000px) {
+  header{
+    background-attachment: fixed;
+  }
+}

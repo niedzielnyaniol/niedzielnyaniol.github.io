@@ -1,0 +1,305 @@
+.block{
+  background: #ccc;
+  background: -webkit-linear-gradient(90deg, #ddd, #bbb);
+  background: -o-linear-gradient(90deg, #ddd, #bbb);
+  background: -moz-linear-gradient(90deg, #ddd, #bbb);
+  background: linear-gradient(90deg, #ddd, #bbb);
+  position: relative;
+  @include border-radius(10px);
+  float: left;
+  @include box-shadow(0px 0px 30px 2px rgba(0,0,0,0.75));
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.img-block{
+  width: 50%;
+  height: 100%;
+  @include border-top-left-radius(10px);
+  @include border-bottom-left-radius(10px);
+  float: left;
+}
+
+.content-block{
+  float: left;
+  width: 50%;
+  height: 100%;
+  position: absolute;;
+  top: 50%;
+  right: 0;
+  transform: translateY(-40%);
+
+  h3{
+    text-align: center;
+    font-size: 30px;
+    font-family: $secondary-font, cursive;
+
+  }
+
+  p{
+    font-family: $primary-font, sans-serif;;
+    text-align: justify;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+}
+
+// RESPONSIVE LAYOUTS
+
+// 1200px <= large screens
+@media (min-width: 1200px) {
+  $margin-lg: 30px;
+  $height-lg: 200px;
+
+  .block_1{
+    margin-right: $margin-lg;
+    margin-bottom: $margin-lg;
+    height: $height-lg;
+    width: 462.5px;
+  }
+
+  .block_2{
+    margin-right: $margin-lg;
+    margin-bottom: $margin-lg;
+    height: $height-lg;
+    width: 370px;
+  }
+
+  .block_3{
+    height: $height-lg;
+    margin-bottom: $margin-lg;
+    width: 277.5px;
+
+    .app-3-bckgrnd{
+      background-image: url($github-logo-sm);
+      background-repeat: no-repeat;
+      background-attachment: local;
+      background-size: 80%;
+      background-position: center;
+      width: 100%;
+    }
+  }
+
+  .block_4{
+    margin-right: $margin-lg;
+    margin-bottom: $margin-lg;
+    height: 2 * $height-lg;
+    width: 862.5px;
+
+    .content-block{
+      top: 50%;
+      right: 0;
+      transform: translateY(-20%);
+    }
+  }
+
+  .block_5{
+    height: 2 * $height-lg;
+    margin-bottom: $margin-lg;
+    width: 277.5px;
+
+    .content-block{
+      top: 50%;
+      right: 0;
+      transform: translateY(-30%);
+    }
+  }
+
+  .block_6{
+    height: $height-lg;
+    margin-right: $margin-lg;
+    width: 570px
+  }
+
+  .block_7{
+    height: $height-lg;
+    width: 570px
+  }
+}
+
+// 992px <=  medium screen <= 1199px
+@media (min-width: 992px) and (max-width: 1199px) {
+  $container-md: 970px;
+  $margin-md : 20px;
+  $height-md : 165px;
+
+  .block_1{
+    margin-right: $margin-md;
+    margin-bottom: $margin-md;
+    height: $height-md;
+    width: ($container-md - 2 * $margin-md) * 5 / 12;
+  }
+
+  .block_2{
+    margin-right: $margin-md;
+    margin-bottom: $margin-md;
+    height: $height-md;
+    width: ($container-md - 2 * $margin-md) * 1 / 3;
+  }
+
+  .block_3{
+    height: $height-md;
+    margin-bottom: $margin-md;
+    width: ($container-md - 2 * $margin-md) * 1 / 4;
+
+    .app-3-bckgrnd{
+      background-image: url($github-logo-sm);
+      background-repeat: no-repeat;
+      background-attachment: local;
+      background-size: 80%;
+      background-position: center;
+      width: 100%;
+    }
+  }
+
+  .block_4{
+    margin-right: $margin-md;
+    margin-bottom: $margin-md;
+    height: 2 * $height-md;
+    width: ($container-md - $margin-md) * 3 / 4 + 4px;
+  }
+
+  .block_5{
+    height: 2 * $height-md;
+    margin-bottom: $margin-md;
+    width: ($container-md - $margin-md) * 1 / 4 - 4px;
+  }
+
+  .block_6{
+    height: $height-md;
+    margin-right: $margin-md;
+    width: ($container-md - $margin-md) * 1 / 2;
+  }
+
+  .block_7{
+    height: $height-md;
+    width: ($container-md - $margin-md) * 1 / 2;
+  }
+}
+
+// 768px <=  small screen <= 991px
+@media (min-width: 768px) and (max-width: 991px) {
+  $container-sm: 750px;
+  $margin-sm : 20px;
+  $height-sm : 165px;
+
+  .block_1{
+    margin-right: $margin-sm;
+    margin-bottom: $margin-sm;
+    height: $height-sm;
+    width: ($container-sm - $margin-sm) * 5 / 9;
+  }
+
+  .block_2{
+    margin-bottom: $margin-sm;
+    height: $height-sm;
+    width: ($container-sm - $margin-sm) * 4 / 9;
+  }
+
+  .block_3{
+    height: $height-sm;
+    margin-bottom: $margin-sm;
+    width: $container-sm;
+
+    .app-3-bckgrnd{
+      background-image: url($github-logo-lg);
+      background-repeat: no-repeat;
+      background-attachment: local;
+      background-size: 80%;
+      background-position: center;
+      width: 100%;
+    }
+  }
+
+  .block_4{
+    margin-bottom: $margin-sm;
+    height: 2 * $height-sm;
+    width: 750px;
+  }
+
+  .block_5{
+    height: 2 * $height-sm + $margin-sm;
+    margin-bottom: $margin-sm;
+    margin-right: $margin-sm;
+    width: ($container-sm - $margin-sm) * 1 / 3;
+  }
+
+  .block_6{
+    height: $height-sm;
+    margin-bottom: $margin-sm;
+    width: ($container-sm - $margin-sm) * 2 / 3;
+  }
+
+  .block_7{
+    height: $height-sm;
+    width: ($container-sm - $margin-sm) * 2 / 3;
+  }
+}
+
+// small screens <= 767
+@media (max-width: 767px) {
+  $margin-xs : 20px;
+
+  $section-margin: 0px;
+
+  $height-xs-1: 200px;
+  $height-xs-2: 200px;
+  $height-xs-3: 200px;
+  $height-xs-4: 200px;
+  $height-xs-5: 200px;
+  $height-xs-6: 200px;
+  $height-xs-7: 200px;
+
+  .block_1, .block_2, .block_3, .block_4, .block_5, .block_6, .block_7{
+      position: relative;
+      width: 90%;
+      left: 50%;
+      -webkit-transform: translate(-50%);
+              transform: translate(-50%);
+  }
+
+  .block_1{
+    height: $height-xs-1;
+  }
+
+  .block_2{
+    height: $height-xs-2;
+    top: $margin-xs;
+  }
+
+  .block_3{
+    height: $height-xs-3;
+    top: 2 * $margin-xs;
+
+    .app-3-bckgrnd{
+      background: url($github-logo-lg);
+      background-repeat: no-repeat;
+      background-attachment: local;
+      background-size: 100%;
+      background-position: center;
+      width: 100%;
+    }
+  }
+
+  .block_4{
+    height: $height-xs-4;
+    top: 3 * $margin-xs;
+  }
+
+  .block_5{
+    height: $height-xs-5;
+    top: 4 * $margin-xs;
+  }
+
+  .block_6{
+    height: $height-xs-6;
+    top: 5 * $margin-xs;
+  }
+
+  .block_7{
+    height: $height-xs-7;
+    top: 6 * $margin-xs;
+  }
+}

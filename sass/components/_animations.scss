@@ -1,0 +1,119 @@
+// in portfolio section:
+.block:hover .img-block{
+  animation: blur-effect 300ms ease-in-out forwards;
+  -webkit-animation: blur-effect 300ms ease-in-out forwards;
+}
+
+@keyframes blur-effect {
+  0%{
+    -webkit-filter: blur(0);
+    -moz-filter: blur(0);
+    -o-filter: blur(0);
+    -ms-filter: blur(0);
+    filter: blur(0);
+    transform: rotate(0) scale(1);
+  }
+  100%{
+    @include filter(blur(3px));
+    @include transform(rotate(0) scale(1.05));
+  }
+}
+
+//in skills section
+.percent-100-animation{
+  animation: percent-100-animation 1s ease-in-out forwards, 200ms;
+  -webkit-animation: percent-100-animation 1s ease-in-out forwards, 200ms;
+}
+
+@keyframes percent-100-animation {
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 100%;
+  }
+}
+
+.percent-80-animation{
+  animation: percent-80-animation 1s ease-in-out forwards 200ms;
+  -webkit-animation: percent-80-animation 1s ease-in-out forwards 200ms;
+}
+
+@keyframes percent-80-animation {
+  0%{
+    width: 0%;
+  }
+  70%{
+    width: 90%;
+  }
+  100%{
+    width: 80%;
+  }
+}
+
+.percent-60-animation{
+  animation: percent-60-animation 1s ease-in-out forwards 200ms;
+  -webkit-animation: percent-60-animation 1s ease-in-out forwards 200ms;
+}
+
+@keyframes percent-60-animation {
+  0%{
+    width: 0%;
+  }
+  70%{
+    width: 70%;
+  }
+  100%{
+    width: 60%;
+  }
+}
+
+.percent-40-animation{
+  animation: percent-40-animation 1s ease-in-out forwards 200ms;
+  -webkit-animation: percent-40-animation 1s ease-in-out forwards 200ms;
+}
+
+@keyframes percent-40-animation {
+  0%{
+    width: 0%;
+  }
+  70%{
+    width: 50%;
+  }
+  100%{
+    width: 40%;
+  }
+}
+
+.percent-20-animation{
+  animation: percent-20-animation 1s ease-in-out forwards 200ms;
+  -webkit-animation: percent-20-animation 1s ease-in-out forwards 200ms;
+}
+
+@keyframes percent-20-animation {
+  0%{
+    width: 0%;
+  }
+  70%{
+    width: 30%;
+  }
+  100%{
+    width: 20%;
+  }
+}
+
+//
+.env-logo-animation{
+  animation: env-logo-animation 1s ease-in-out forwards;
+  -webkit-animation: env-logo-animation 1s ease-in-out forwards;
+}
+
+@keyframes env-logo-animation {
+  0%{
+    transform: rotateY(0);
+  }
+
+  100%{
+    transform: rotateY(360deg);
+  }
+}

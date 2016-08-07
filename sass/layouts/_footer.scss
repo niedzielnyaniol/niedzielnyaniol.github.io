@@ -1,0 +1,49 @@
+.footer-section{
+  font-size: 22px;
+  text-align: center;
+  padding: 50px 0;
+  width: 100%;
+  background: rgba(225, 31, 34, 0.8);
+  border-top: 5px solid #e11f22;
+  color: #fff;
+
+  a{
+    color: #fff;
+    text-decoration: none;
+
+    &:hover{
+      color: #ddd;
+    }
+  }
+}
+
+a.linkedin{
+  font-size: 48px;
+  width: 70%;
+  color: #fff;
+  background: #0177B5;
+  margin: 0 auto!important;
+  padding: 0!important;
+  display: block;
+  @include border-radius(5px);
+
+  &:hover{
+    background: #0066a4;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 989px){
+  .footer-section{
+    h1{
+      font-size: 55px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .footer-section{
+    h1{
+      font-size: 30px;
+    }
+  }
+}
