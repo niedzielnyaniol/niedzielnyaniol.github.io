@@ -1,6 +1,6 @@
 /* line 1, ../sass/base/_base.scss */
 body {
-  font-family: "Reem Kufi", sans-serif;
+  font-family: "Dosis", sans-serif;
 }
 
 /* line 5, ../sass/base/_base.scss */
@@ -100,7 +100,7 @@ a {
 }
 /* line 39, ../sass/components/_blocks.scss */
 .content-block p {
-  font-family: "Reem Kufi", sans-serif;
+  font-family: "Dosis", sans-serif;
   text-align: justify;
   width: 90%;
   margin-left: auto;
@@ -387,20 +387,6 @@ section {
   padding-bottom: 0;
 }
 
-/* line 21, ../sass/components/_sections.scss */
-.portfolio-section {
-  position: relative;
-  background: repeating-linear-gradient(45deg, #606dbc, #606dbc 10px, #465298 10px, #465298 20px);
-}
-
-@media (max-width: 767px) {
-  /* line 34, ../sass/components/_sections.scss */
-  .portfolio-section {
-    height: 1710px;
-    position: relative;
-    background: repeating-linear-gradient(45deg, #606dbc, #606dbc 10px, #465298 10px, #465298 20px);
-  }
-}
 /* line 1, ../sass/components/_bootstrap-extentions.scss */
 .no-pads-left, .no-pads {
   padding-left: 0 !important;
@@ -603,34 +589,58 @@ section {
   border: 2px solid #fff;
 }
 
-/* line 2, ../sass/layouts/_portfolio.scss */
+/* line 1, ../sass/layouts/_portfolio.scss */
+.portfolio-section {
+  position: relative;
+  background: repeating-linear-gradient(45deg, #606dbc, #606dbc 10px, #465298 10px, #465298 20px);
+}
+
+@media (max-width: 767px) {
+  /* line 14, ../sass/layouts/_portfolio.scss */
+  .portfolio-section {
+    height: 1710px;
+    position: relative;
+    background: repeating-linear-gradient(45deg, #606dbc, #606dbc 10px, #465298 10px, #465298 20px);
+  }
+}
+/* line 29, ../sass/layouts/_portfolio.scss */
 .app-1-bckgrnd {
   background: url("http://www.1800pocketpc.com/wp-content/uploads/2008/09/minesweeper.jpg");
 }
 
-/* line 6, ../sass/layouts/_portfolio.scss */
+/* line 33, ../sass/layouts/_portfolio.scss */
 .app-2-bckgrnd {
-  background: url("http://a3.mzstatic.com/us/r30/Purple69/v4/20/51/b0/2051b05b-9d73-20c8-c4e4-e16224913114/screen322x572.jpeg");
+  background: url("../img/calculator-app.jpg");
+  background-position: center top;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
-/* line 10, ../sass/layouts/_portfolio.scss */
+/* line 42, ../sass/layouts/_portfolio.scss */
 .app-4-bckgrnd {
   background: url("http://userguide.protoshare.com/wp-content/uploads/2012/03/rich-text-editor.png");
 }
 
-/* line 14, ../sass/layouts/_portfolio.scss */
+/* line 46, ../sass/layouts/_portfolio.scss */
 .app-5-bckgrnd {
   background: url("https://www.geekup.pl/userdata/gfx/d016da346105028a9997dc9829badd47.jpg");
 }
 
-/* line 18, ../sass/layouts/_portfolio.scss */
+/* line 50, ../sass/layouts/_portfolio.scss */
 .app-6-bckgrnd {
   background: url("http://miodysowa.pl/images/mainpic.jpg");
 }
 
-/* line 22, ../sass/layouts/_portfolio.scss */
+/* line 54, ../sass/layouts/_portfolio.scss */
 .app-7-bckgrnd {
-  background: url("http://designwoop.com/uploads/2013/12/22-freebie-portfolio-design-tutorial.jpg");
+  background: url("../img/mackac-webpage.jpg");
+  background-position: center top;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 /* line 1, ../sass/layouts/_skills.scss */
@@ -925,17 +935,26 @@ a.linkedin:hover {
 header {
   background: url("../img/header-background.jpg");
   background-position: center bottom;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
-  background-attachment: fixed;
-  height: 640px;
   width: 100%;
+  position: relative;
 }
-/* line 9, ../sass/layouts/_header.scss */
+/* line 11, ../sass/layouts/_header.scss */
+header .borderkick {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -80%);
+}
+/* line 18, ../sass/layouts/_header.scss */
 header nav {
   float: right;
   margin: 30px 30px 0 0;
 }
-/* line 14, ../sass/layouts/_header.scss */
+/* line 23, ../sass/layouts/_header.scss */
 header nav a {
   color: rgba(0, 0, 0, 0.7);
   display: inline-block;
@@ -944,16 +963,16 @@ header nav a {
   text-transform: uppercase;
   margin: 0;
 }
-/* line 22, ../sass/layouts/_header.scss */
+/* line 31, ../sass/layouts/_header.scss */
 header nav a:first-child {
   margin-left: 0px;
 }
-/* line 26, ../sass/layouts/_header.scss */
+/* line 35, ../sass/layouts/_header.scss */
 header nav a:hover {
   color: #000;
   text-decoration: none;
 }
-/* line 33, ../sass/layouts/_header.scss */
+/* line 42, ../sass/layouts/_header.scss */
 header h1 {
   text-align: center;
   font-weight: 700;
@@ -962,15 +981,14 @@ header h1 {
   letter-spacing: 0.05em;
   margin-bottom: 20px;
   clear: both;
-  padding-top: 200px;
 }
-/* line 43, ../sass/layouts/_header.scss */
+/* line 51, ../sass/layouts/_header.scss */
 header h1 span {
   display: inline-block;
-  padding: 0.2em 0.5em 0 0.5em;
+  padding: 0.2em 0.5em;
   border: #fff solid 10px;
 }
-/* line 50, ../sass/layouts/_header.scss */
+/* line 58, ../sass/layouts/_header.scss */
 header .kicker {
   color: #fff;
   text-align: center;
@@ -980,6 +998,18 @@ header .kicker {
   line-height: 1;
 }
 
+@media (max-width: 990px) {
+  /* line 70, ../sass/layouts/_header.scss */
+  header h1 span {
+    border: #fff solid 5px;
+  }
+}
+@media (min-width: 1000px) {
+  /* line 76, ../sass/layouts/_header.scss */
+  header {
+    background-attachment: fixed;
+  }
+}
 /* line 1, ../sass/layouts/_aboutme.scss */
 .img-profile {
   width: 280px;

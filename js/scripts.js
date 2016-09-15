@@ -18,5 +18,6 @@ $('.env').hover(function(){
       $(this).removeClass('env-logo-animation')
         .dequeue();
     })
-
 });
+
+$('header').height($(window).height());

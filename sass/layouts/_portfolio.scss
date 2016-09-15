@@ -1,3 +1,30 @@
+.portfolio-section{
+  position: relative;
+  background: repeating-linear-gradient(
+    45deg,
+    #606dbc,
+    #606dbc 10px,
+    #465298 10px,
+    #465298 20px
+  );
+}
+
+// relative layout - small screens
+@media (max-width: 767px) {
+  .portfolio-section{
+
+    height: 1710px;
+    position: relative;
+    background: repeating-linear-gradient(
+      45deg,
+      #606dbc,
+      #606dbc 10px,
+      #465298 10px,
+      #465298 20px
+    );
+  }
+}
+
 // blocks backgrounds
 .app-1-bckgrnd{
   background: url($first-app-bckgrnd);
@@ -5,6 +32,11 @@
 
 .app-2-bckgrnd{
   background: url($second-app-bckgrnd);
+  background-position: center top;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .app-4-bckgrnd{
@@ -21,4 +53,9 @@
 
 .app-7-bckgrnd{
   background: url($sixth-app-bckgrnd);
+  background-position: center top;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
