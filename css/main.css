@@ -387,6 +387,23 @@ section {
   padding-bottom: 0;
 }
 
+<<<<<<< HEAD
+=======
+/* line 21, ../sass/components/_sections.scss */
+.portfolio-section {
+  position: relative;
+  background: repeating-linear-gradient(45deg, #606dbc, #606dbc 10px, #465298 10px, #465298 20px);
+}
+
+@media (max-width: 767px) {
+  /* line 34, ../sass/components/_sections.scss */
+  .portfolio-section {
+    height: 1710px;
+    position: relative;
+    background: repeating-linear-gradient(45deg, #606dbc, #606dbc 10px, #465298 10px, #465298 20px);
+  }
+}
+>>>>>>> e0f8517c4f9e1988eb0d5da1348dbc6a54291faa
 /* line 1, ../sass/components/_bootstrap-extentions.scss */
 .no-pads-left, .no-pads {
   padding-left: 0 !important;
@@ -589,6 +606,7 @@ section {
   border: 2px solid #fff;
 }
 
+<<<<<<< HEAD
 /* line 1, ../sass/layouts/_portfolio.scss */
 .portfolio-section {
   position: relative;
@@ -604,10 +622,14 @@ section {
   }
 }
 /* line 29, ../sass/layouts/_portfolio.scss */
+=======
+/* line 2, ../sass/layouts/_portfolio.scss */
+>>>>>>> e0f8517c4f9e1988eb0d5da1348dbc6a54291faa
 .app-1-bckgrnd {
   background: url("http://www.1800pocketpc.com/wp-content/uploads/2008/09/minesweeper.jpg");
 }
 
+<<<<<<< HEAD
 /* line 33, ../sass/layouts/_portfolio.scss */
 .app-2-bckgrnd {
   background: url("../img/calculator-app.jpg");
@@ -619,20 +641,37 @@ section {
 }
 
 /* line 42, ../sass/layouts/_portfolio.scss */
+=======
+/* line 6, ../sass/layouts/_portfolio.scss */
+.app-2-bckgrnd {
+  background: url("http://a3.mzstatic.com/us/r30/Purple69/v4/20/51/b0/2051b05b-9d73-20c8-c4e4-e16224913114/screen322x572.jpeg");
+}
+
+/* line 10, ../sass/layouts/_portfolio.scss */
+>>>>>>> e0f8517c4f9e1988eb0d5da1348dbc6a54291faa
 .app-4-bckgrnd {
   background: url("http://userguide.protoshare.com/wp-content/uploads/2012/03/rich-text-editor.png");
 }
 
+<<<<<<< HEAD
 /* line 46, ../sass/layouts/_portfolio.scss */
+=======
+/* line 14, ../sass/layouts/_portfolio.scss */
+>>>>>>> e0f8517c4f9e1988eb0d5da1348dbc6a54291faa
 .app-5-bckgrnd {
   background: url("https://www.geekup.pl/userdata/gfx/d016da346105028a9997dc9829badd47.jpg");
 }
 
+<<<<<<< HEAD
 /* line 50, ../sass/layouts/_portfolio.scss */
+=======
+/* line 18, ../sass/layouts/_portfolio.scss */
+>>>>>>> e0f8517c4f9e1988eb0d5da1348dbc6a54291faa
 .app-6-bckgrnd {
   background: url("http://miodysowa.pl/images/mainpic.jpg");
 }
 
+<<<<<<< HEAD
 /* line 54, ../sass/layouts/_portfolio.scss */
 .app-7-bckgrnd {
   background: url("../img/mackac-webpage.jpg");
@@ -641,6 +680,11 @@ section {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+=======
+/* line 22, ../sass/layouts/_portfolio.scss */
+.app-7-bckgrnd {
+  background: url("http://designwoop.com/uploads/2013/12/22-freebie-portfolio-design-tutorial.jpg");
+>>>>>>> e0f8517c4f9e1988eb0d5da1348dbc6a54291faa
 }
 
 /* line 1, ../sass/layouts/_skills.scss */

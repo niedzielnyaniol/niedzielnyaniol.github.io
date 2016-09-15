@@ -17,3 +17,33 @@ section{
 .no-pad-bottom{
   padding-bottom: 0;
 }
+<<<<<<< HEAD
+=======
+
+.portfolio-section{
+  position: relative;
+  background: repeating-linear-gradient(
+    45deg,
+    #606dbc,
+    #606dbc 10px,
+    #465298 10px,
+    #465298 20px
+  );
+}
+
+// relative layout - small screens
+@media (max-width: 767px) {
+  .portfolio-section{
+
+    height: 1710px;
+    position: relative;
+    background: repeating-linear-gradient(
+      45deg,
+      #606dbc,
+      #606dbc 10px,
+      #465298 10px,
+      #465298 20px
+    );
+  }
+}
+>>>>>>> e0f8517c4f9e1988eb0d5da1348dbc6a54291faa
