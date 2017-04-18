@@ -22,4 +22,4 @@ $('.env').hover(function(){
 
 $('header').height($(window).height());
 
-console.log( 'hello' );
+console.log( 'hello and hi' );
