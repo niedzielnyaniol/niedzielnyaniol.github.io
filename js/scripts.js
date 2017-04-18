@@ -21,3 +21,5 @@ $('.env').hover(function(){
 });
 
 $('header').height($(window).height());
+
+console.log( 'hello' );
