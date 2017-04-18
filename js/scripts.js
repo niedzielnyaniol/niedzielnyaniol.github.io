@@ -8,6 +8,7 @@ $('.skill').hover(function(){
   prBar.children('.percent-60').addClass('percent-60-animation');
   prBar.children('.percent-80').addClass('percent-80-animation');
   prBar.children('.percent-100').addClass('percent-100-animation');
+  console.log('hello from repo2');
 });
 
 $('.env').hover(function(){
