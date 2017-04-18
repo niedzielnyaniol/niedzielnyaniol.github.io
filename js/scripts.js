@@ -2,6 +2,7 @@ $('.skill').hover(function(){
   var prBar = $(this).children('.progressbar');
 
   prBar.fadeIn(300)
+  console.log('hello from repo1');
 
   prBar.children('.percent-20').addClass('percent-20-animation');
   prBar.children('.percent-40').addClass('percent-40-animation');
